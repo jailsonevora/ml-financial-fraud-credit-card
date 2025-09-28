@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "financial_fraud_credit_card"
+version = "0.0.1"
+description = "A short description of the project."
+authors = [
+  { name = "Jailson Evora" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+requires-python = "~=3.10.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["financial_fraud_credit_card"]
+include = ["pyproject.toml", "financial_fraud_credit_card/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["financial_fraud_credit_card"]
+force-sort-within-sections = true
+
