@@ -1,6 +1,6 @@
 # Financial Fraud Credit Card
 
-A short description of the project.
+A machine learning project that detects fraudulent credit card transactions using supervised and unsupervised techniques. Includes data preprocessing, feature engineering, model training, and evaluation to identify anomalies and reduce false positives in real-time transaction streams.
 
 ## Project Organization
 
